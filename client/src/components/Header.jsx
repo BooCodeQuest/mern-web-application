@@ -33,7 +33,7 @@ export default function Header() {
         </Link>
       </div>
   
-      <form
+      {/* <form
         onSubmit={handleSubmit}
         className='flex items-center' style={{backgroundColor: '#f0f0f0', borderRadius: '20px', padding: '8px 12px', flex: 'none', maxWidth: '420px', position: 'relative'}}
       >
@@ -48,7 +48,7 @@ export default function Header() {
           onChange={(e) => setSearchTerm(e.target.value)}
           style={{color: '#333'}}
         />
-      </form>
+      </form> */}
   
       <div style={{flex: 1, display: 'flex', justifyContent: 'flex-end'}}>
         <ul className='flex gap-4 justify-end'>

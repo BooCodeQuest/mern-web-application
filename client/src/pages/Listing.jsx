@@ -100,16 +100,7 @@ export default function Listing() {
           </div>
   
        
-          {/* {currentUser && listing.userRef !== currentUser._id && !contact && (
-            <button
-              onClick={() => setContact(true)}
-              className='mt-4 bg-black text-white p-2 rounded hover:bg-gray-800 transition duration-200 ease-in-out'
-            >
-              Contact Landlord
-            </button>
-          )}
-  
-          {contact && <Contact listing={listing} />} */}
+      
         </div>
       </div>
     )}

@@ -62,7 +62,6 @@ export default function Home() {
       <div>
         <div className='my-3'>
           <h2 className='text-2xl font-semibold' style={{ color: '#333' }}>Featured Offers</h2>
-          <Link className='text-sm hover:underline' to={'/search?offer=true'} style={{ color: '#333' }}>View all offers</Link>
         </div>
         <div className='flex flex-wrap gap-4'>
           {offerListings.map((listing) => (
@@ -75,7 +74,7 @@ export default function Home() {
       <div>
         <div className='my-3'>
           <h2 className='text-2xl font-semibold' style={{ color: '#333' }}>Properties for Rent</h2>
-          <Link className='text-sm hover:underline' to={'/search?type=rent'} style={{ color: '#333' }}>View rental properties</Link>
+          
         </div>
         <div className='flex flex-wrap gap-4'>
           {rentListings.map((listing) => (
@@ -88,7 +87,7 @@ export default function Home() {
       <div>
         <div className='my-3'>
           <h2 className='text-2xl font-semibold' style={{ color: '#333' }}>Properties for Sale</h2>
-          <Link className='text-sm hover:underline' to={'/search?type=sale'} style={{ color: '#333' }}>View properties for sale</Link>
+          
         </div>
         <div className='flex flex-wrap gap-4'>
           {saleListings.map((listing) => (
