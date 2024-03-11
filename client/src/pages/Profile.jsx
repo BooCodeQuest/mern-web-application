@@ -156,7 +156,7 @@ export default function Profile() {
   };
   return (
     <div className='p-5 max-w-lg mx-auto'>
-  <h1 className='text-4xl font-bold text-center mb-10' style={{color: '#333'}}>Profile Update</h1>
+  <h1 className='text-4xl font-bold text-center mb-10' style={{color: '#333'}}>User Dashboard</h1>
   <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
     <div className='flex justify-center'>
       <input
@@ -187,43 +187,11 @@ export default function Profile() {
         ''
       )}
     </p>
-    <input
-      type='text'
-      placeholder='username'
-      defaultValue={currentUser.username}
-      id='username'
-      className='border p-3 rounded-full'
-      onChange={handleChange}
-      style={{backgroundColor: '#f0f0f0', color: '#333'}}
-    />
-    <input
-      type='email'
-      placeholder='email'
-      id='email'
-      defaultValue={currentUser.email}
-      className='border p-3 rounded-full'
-      onChange={handleChange}
-      style={{backgroundColor: '#f0f0f0', color: '#333'}}
-    />
-    <input
-      type='password'
-      placeholder='password'
-      onChange={handleChange}
-      id='password'
-      className='border p-3 rounded-full'
-      style={{backgroundColor: '#f0f0f0', color: '#333'}}
-    />
-    <button
-      disabled={loading}
-      className='rounded-full py-3 uppercase font-bold'
-      style={{backgroundColor: '#333', color: '#fff', opacity: loading ? 0.8 : 1, transition: 'opacity 300ms'}}
-    >
-      {loading ? 'Updating...' : 'Update Profile'}
-    </button>
+    
     <Link
-      className='py-3 rounded-full uppercase font-bold text-center'
+      className='rounded-full py-3 uppercase font-bold flex justify-center'
       to={'/create-listing'}
-      style={{border: '2px solid #333', color: '#333'}}
+      style={{backgroundColor: '#333', color: '#fff', opacity: loading ? 0.8 : 1, transition: 'opacity 300ms'}}
     >
       + Create New Listing
     </Link>
